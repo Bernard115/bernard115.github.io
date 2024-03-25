@@ -5,7 +5,7 @@ body { background-color:#38B7BE;color:#fbfb0c; p {
     margin-left: 15px;
   }
 }
-.feature { color:#BDC602; font-family:Verdana, Geneva, Tahoma, sans-serif; }
+.feature { color:#fbfb0c; font-family:Verdana, Geneva, Tahoma, sans-serif; }
 .paragraph { color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; }
 .font { font-weight:bold; }
 .myDiv {
@@ -24,4 +24,52 @@ A:hover {font-size:24; font-weight:bold; color: red;}
     background-color: #000000 ;    
     text-align:left;
   } 
-  
+
+.imagesize { width: 300px;
+  }
+
+.container .buttons { 
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+} 
+
+.container .buttons .btn {
+  padding: 0 10px;
+  display: inline-flex;
+  background: #ddd;
+  color: #FFF;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.container .buttons .btn.active { 
+  background: #444;
+}
+
+.container .buttons .btn:nth-child(2) { 
+  font-size: 1.5em;
+}
+
+.container .buttons .btn:nth-child(3) { 
+  font-size: 2em
+}
+
+.container .content { 
+  font-size: 1em;
+  color: #444;
+}
+
+.container .content ul,
+.container .content li,
+.container .content p,
+.container .content ol,
+.container .content li,
+.container .content tr,
+.container .content td
+{ 
+  transition: 0.5s;
+}
+<!--Transition animaton for font when it increases or decreases size-->

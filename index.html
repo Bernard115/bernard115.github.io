@@ -59,12 +59,20 @@ input[type=submit], input[type=reset] {
     <meta charset="UTF-8">
 </head> 
 <body>
-    <h1>Highschool and University Attendance</h1>
+    <h1>Highschool and University Attendance</h1>                     <!--Adding an Alt description of the picture-->
+    <img class="imagesize" src="https://tinypic.host/images/2024/03/23/IMG_1572.jpeg" alt="A picture of the portfollio's author." >
+    <div class="container"> <!--Cover all page elements-->
+    <div class="buttons">   <!--Make them all subject to buttons-->
+        <span class="btn active" onclick="document.getElementById('text').style.fontSize = '1em'">A</span>
+        <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.25em'">A</span>
+        <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.75em'">A</span>
+    </div><!--Each buttone increases the font-size by .25em-->
+    <div class="content" id="text"><!--Allows accessability option for those who have vision disabilites-->
     <ul class="myDiv">
         <li class="paragraph">Marshal McLuhan Catholic Secondary School: Attended- 2016, Graduated- 2020</li>
         <li class="paragraph">Toronto Metropolitan University: Attended- 2021, Graduating- 2025 <br> </li>
     </ul>
-    <hr>
+    <hr><!--The heading colour has been changed to a brigh yello for contrast-->
     <h2 class="feature">Program Description</h2>
     <p class="paragraph">My major, BTM(business tecnhology management)is about analyzing business needs and designing tecnhology based processes and solutions appropriately. <br> BTM covers business aspects such as: <br> </p>
     <ol class="myDiv">
@@ -88,11 +96,11 @@ input[type=submit], input[type=reset] {
         <td>Course Name</td>
         <td>Course Description</td>
     </tr>
-    <tr>
+    <tr class="paragraph">
         <td>ITM200:Fundementals of Programming</td>
         <td>This course taught the basics of Python coding. Once the student learned the basic tools for coding <br> it challanged them with interesting and thought provoking projects. This course was very useful <br> because it pushed students to think outside the box and with every lecture came new challanges and <br> learning experiences</td>
     </tr> 
-    <tr>
+    <tr class="paragraph">
         <td>ACC406:Intro Management Accounting</td>
         <td>ACC406 taught accounting for managerial purposes. It delved into the accounting field and expanded <br> the student's knwoledge on how accounting items are allocated within a business for performance <br> optimization. This course was very memorable because the accounting processes were very logical and <br> the professor was very elaborative when explaining the details of making investment decisions in an <br> organization.</td>
     </tr>   
@@ -100,6 +108,8 @@ input[type=submit], input[type=reset] {
     <hr>
     <h4 class="feature">Educational Awards and Extra-curricular Activities</h4>
     <p class="paragraph">In highschool I used to play for my school's volleyball team in grade 9 and 10. The team and I have received multiple awards <br> for placing first and thrid place in the first and second year respectively. In my first year at TMU, I attended a course called <br> global management. Part of the course was working as a group in a virtual industry management website called GLO-BUS. <br> The objective was to create the most profitable "company" in the class. The group and I received a certificate award for <br> placing top 10 in the country.  </p>
+</div>
+</div>
     <hr>
     <h4 class="feature"> Questionaire</h4>
         <form id="myform"; onsubmit="f1()"; class="myDiv";>   
@@ -154,7 +164,8 @@ Type here...
             </p>      
     </form>
     <footer>
-        <p class="hoverlink">Written by: Bernard Hasimaj                                          |                  <a href="mailto:bernard.hasimaj@torontomu.ca">Contact Me</a> </p>
+        <p class="hoverlink">Written by: Bernard Hasimaj   
+        </div>                                       |                  <a href="mailto:bernard.hasimaj@torontomu.ca">Contact Me</a> </p>
     </footer>
 <link rel="stylesheet" href="style.css">
 <script src="main.js"></script> 
